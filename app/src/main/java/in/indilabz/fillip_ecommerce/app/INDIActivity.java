@@ -2,7 +2,6 @@ package in.indilabz.fillip_ecommerce.app;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 import in.indilabz.fillip_ecommerce.INDIMaster;
 import in.indilabz.fillip_ecommerce.R;
 import in.indilabz.fillip_ecommerce.activity.SupportActivity;
-import in.indilabz.fillip_ecommerce.helper.INDIPreferences;
+import in.indilabz.fillip_ecommerce.utils.INDIPreferences;
 import in.indilabz.fillip_ecommerce.rest.API;
 import in.indilabz.fillip_ecommerce.rest.RetrofitInstance;
 import in.indilabz.fillip_ecommerce.rest.RetrofitListener;

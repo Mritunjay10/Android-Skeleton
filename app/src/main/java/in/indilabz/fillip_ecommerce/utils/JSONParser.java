@@ -1,4 +1,4 @@
-package in.indilabz.fillip_ecommerce.helper;
+package in.indilabz.fillip_ecommerce.utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

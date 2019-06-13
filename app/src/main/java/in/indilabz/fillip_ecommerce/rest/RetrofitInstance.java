@@ -10,8 +10,8 @@ import java.util.concurrent.TimeUnit;
 
 import in.indilabz.fillip_ecommerce.utils.Constants;
 import in.indilabz.fillip_ecommerce.INDIMaster;
-import in.indilabz.fillip_ecommerce.helper.INDIPreferences;
-import in.indilabz.fillip_ecommerce.helper.JSONParser;
+import in.indilabz.fillip_ecommerce.utils.INDIPreferences;
+import in.indilabz.fillip_ecommerce.utils.JSONParser;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import retrofit2.Call;

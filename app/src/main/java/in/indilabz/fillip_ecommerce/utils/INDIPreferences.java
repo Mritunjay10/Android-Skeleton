@@ -1,4 +1,4 @@
-package in.indilabz.fillip_ecommerce.helper;
+package in.indilabz.fillip_ecommerce.utils;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
