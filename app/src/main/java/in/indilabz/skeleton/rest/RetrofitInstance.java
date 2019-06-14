@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 
 import java.util.concurrent.TimeUnit;
 
+import in.indilabz.skeleton.activity.SplashActivity;
 import in.indilabz.skeleton.utils.Constants;
 import in.indilabz.skeleton.INDIMaster;
 import in.indilabz.skeleton.utils.INDIPreferences;
@@ -62,7 +63,7 @@ public class RetrofitInstance implements Constants {
                 .writeTimeout(5, TimeUnit.MINUTES)
                 .addInterceptor(chain -> {
                     Request newRequest  = chain.request().newBuilder()
-                            .addHeader("AUTH-TOKEN", INDIPreferences.getEmployeeDetails().getAuth().getToken())
+                            .addHeader("AUTH-TOKEN", INDIPreferences.getToken())
                             .build();
                     return chain.proceed(newRequest);
                 }).build();

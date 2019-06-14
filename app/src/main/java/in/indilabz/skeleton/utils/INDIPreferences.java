@@ -35,44 +35,16 @@ public class INDIPreferences implements Constants {
         editor.commit();
     }
 
-    public static String getUserOTP() {
+    public static String getToken() {
         SharedPreferences mSharedPreferences = getPreferences();
-        return mSharedPreferences.getString("USER_OTP", "");
+        return mSharedPreferences.getString("USER_TOKEN", "");
     }
 
-    public static void saveLastLatitude( String value) {
+    public static void saveToken( String value) {
         SharedPreferences.Editor editor = getPreferences().edit();
-        editor.putString("USER_LAST_LAT", value);
+        editor.putString("USER_TOKEN", value);
         editor.commit();
     }
-
-    public static String getLastLatitude() {
-        SharedPreferences mSharedPreferences = getPreferences();
-        return mSharedPreferences.getString("USER_LAST_LAT", "");
-    }
-
-    public static void saveLastLongitude( String value) {
-        SharedPreferences.Editor editor = getPreferences().edit();
-        editor.putString("USER_LAST_LON", value);
-        editor.commit();
-    }
-
-    public static String getLastLongitude() {
-        SharedPreferences mSharedPreferences = getPreferences();
-        return mSharedPreferences.getString("USER_LAST_LON", "");
-    }
-
-    public static void saveLastTime( String value) {
-        SharedPreferences.Editor editor = getPreferences().edit();
-        editor.putString("USER_LAST_TIME", value);
-        editor.commit();
-    }
-
-    public static String getLastTime() {
-        SharedPreferences mSharedPreferences = getPreferences();
-        return mSharedPreferences.getString("USER_LAST_TIME", "");
-    }
-
 
     public static void saveBackPress(boolean value) {
         SharedPreferences.Editor editor = getPreferences().edit();
